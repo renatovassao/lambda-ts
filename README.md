@@ -1,0 +1,1 @@
+### Functional concepts written in Typescript
