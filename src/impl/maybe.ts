@@ -8,15 +8,15 @@ export class Maybe<T> implements Monad<T> {
   }
 
   public fmap<U>(f: (t: T) => U): Maybe<U> {
-    if (this.value) {
+    if (this.value !== undefined) {
       return new Maybe(f(this.value));
     } else {
       return new Maybe();
     }
   }
 
-  public return<U>(t: U): Maybe<U> {
-    return new Maybe(t);
+  public return<U>(u: U): Maybe<U> {
+    return new Maybe(u);
   }
 
   private join<U>(m: Maybe<Maybe<U>>): Maybe<U> {
