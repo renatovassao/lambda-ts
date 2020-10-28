@@ -1,5 +1,10 @@
 ## Functional concepts written in Typescript
 
+### References
+- https://wiki.haskell.org/Monad
+- https://wiki.haskell.org/Monad_laws
+- https://en.m.wikipedia.org/wiki/Monad_(category_theory)
+
 ### Types
 - [Fuctor](/src/types/functor.ts)
 - [Monad](/src/types/monad.ts)
